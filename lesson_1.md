@@ -64,7 +64,7 @@ the result what you expected?
 
 The key here is that javascript empties the stack first, then empties the queue.
 
-![](images/output_csNZiN.gif)
+![](images/output_um2c5H.gif)
 
 So even this code:
 
