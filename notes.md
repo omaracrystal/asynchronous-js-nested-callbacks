@@ -1,3 +1,5 @@
+When executing code, their is an order that takes place Stack > Heap > Que > Stack. In the Chrome browser there is V8 JavaScript Engine that helps execute code, V8 consists of Stack and Que and doesn't have heap. Heap is apart of the event loop because it holds time out functions which holds things before placing into a Que (V8 cannot have timeout functions).
+
 
 ## STACK
 A stack is a container of objects that are inserted and removed according to the last-in first-out (LIFO) principle. In the pushdown stacks only two operations are allowed: push the item into the stack, and pop the item out of the stack. A stack is a limited access data structure - elements can be added and removed from the stack only at the top. push adds an item to the top of the stack, pop removes the item from the top. A helpful analogy is to think of a stack of books; you can remove only the top book, also you can add a new book on the top.
@@ -21,6 +23,7 @@ The difference between stacks and queues is in removing. In a stack we remove th
 ## Stack:
 When a function is called in javascript, runtime creates a frame in the stack which holds that particular function’s arguments and local variables. When the function returns that frame is popped out of the stack. Example: (from MDN site)
 
+```
 function f(b) {
 var a = 12;
 return a+b+35;
@@ -32,6 +35,8 @@ return f(m*x);
 }
 
 g(21);
+
+```
 
 When we invoke g(21), the first frame is created holding g arguments and local vars. Now when f is called from within g a second frame is created and pushed above the first one. This new frame also holds arguments to g function and its local vars.
 
