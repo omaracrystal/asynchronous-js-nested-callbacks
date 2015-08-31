@@ -18,7 +18,7 @@ The difference between stacks and queues is in removing. In a stack we remove th
 
 # UNDERSTANDING EVENT LOOPS
 
-Stack:
+## Stack:
 When a function is called in javascript, runtime creates a frame in the stack which holds that particular function’s arguments and local variables. When the function returns that frame is popped out of the stack. Example: (from MDN site)
 
 function f(b) {
